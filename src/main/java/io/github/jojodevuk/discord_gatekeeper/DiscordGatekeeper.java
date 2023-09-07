@@ -3,7 +3,7 @@ package io.github.jojodevuk.discord_gatekeeper;
 import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.github.jojodevuk.discord_gatekeeper.events.ReadyEventListener;
+import io.github.jojodevuk.discord_gatekeeper.events.discord.ReadyEventListener;
 import io.github.jojodevuk.discord_gatekeeper.managers.PlayerManager;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -20,7 +20,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Type;
 import java.util.Set;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

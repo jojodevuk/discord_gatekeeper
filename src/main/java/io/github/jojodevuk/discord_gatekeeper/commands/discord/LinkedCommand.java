@@ -1,4 +1,4 @@
-package io.github.jojodevuk.discord_gatekeeper.discordCommands;
+package io.github.jojodevuk.discord_gatekeeper.commands.discord;
 
 import io.github.jojodevuk.discord_gatekeeper.DiscordGatekeeper;
 import io.github.jojodevuk.discord_gatekeeper.records.Player;

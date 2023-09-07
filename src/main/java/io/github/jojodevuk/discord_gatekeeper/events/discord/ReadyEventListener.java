@@ -1,10 +1,10 @@
-package io.github.jojodevuk.discord_gatekeeper.events;
+package io.github.jojodevuk.discord_gatekeeper.events.discord;
 
 import io.github.jojodevuk.discord_gatekeeper.DiscordGatekeeper;
-import io.github.jojodevuk.discord_gatekeeper.discordCommands.ForceUnlinkCommand;
-import io.github.jojodevuk.discord_gatekeeper.discordCommands.LinkCommand;
-import io.github.jojodevuk.discord_gatekeeper.discordCommands.LinkedCommand;
-import io.github.jojodevuk.discord_gatekeeper.discordCommands.UnlinkCommand;
+import io.github.jojodevuk.discord_gatekeeper.commands.discord.ForceUnlinkCommand;
+import io.github.jojodevuk.discord_gatekeeper.commands.discord.LinkCommand;
+import io.github.jojodevuk.discord_gatekeeper.commands.discord.LinkedCommand;
+import io.github.jojodevuk.discord_gatekeeper.commands.discord.UnlinkCommand;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
