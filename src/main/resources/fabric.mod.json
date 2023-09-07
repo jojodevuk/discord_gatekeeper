@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "discord_gatekeeper",
+	"version": "${version}",
+	"name": "Discord Gatekeeper",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"jojodevuk",
+		"TheBlackSquidward"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/discord_gatekeeper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"server": [
+			"io.github.jojodevuk.discord_gatekeeper.DiscordGatekeeper"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20",
+		"java": ">=17"
+	},
+	"mixins": [
+		"discord_gatekeeper.mixins.json"
+	]
+}
