@@ -1,7 +1,7 @@
 package io.github.jojodevuk.discord_gatekeeper.discordCommands;
 
 import io.github.jojodevuk.discord_gatekeeper.DiscordGatekeeper;
-import io.github.jojodevuk.discord_gatekeeper.classes.Player;
+import io.github.jojodevuk.discord_gatekeeper.records.Player;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 

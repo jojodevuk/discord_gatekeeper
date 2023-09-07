@@ -2,8 +2,8 @@ package io.github.jojodevuk.discord_gatekeeper.managers;
 
 import com.google.gson.reflect.TypeToken;
 import io.github.jojodevuk.discord_gatekeeper.DiscordGatekeeper;
-import io.github.jojodevuk.discord_gatekeeper.classes.LinkCode;
-import io.github.jojodevuk.discord_gatekeeper.classes.Player;
+import io.github.jojodevuk.discord_gatekeeper.records.LinkCode;
+import io.github.jojodevuk.discord_gatekeeper.records.Player;
 
 import java.io.File;
 import java.lang.reflect.Type;
