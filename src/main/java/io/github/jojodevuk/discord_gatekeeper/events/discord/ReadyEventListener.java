@@ -14,7 +14,7 @@ public class ReadyEventListener extends ListenerAdapter {
 
     @Override
     public void onReady(ReadyEvent event) {
-        DiscordGatekeeper.jda = event.getJDA();
+        DiscordGatekeeper.JDA = event.getJDA();
         DiscordGatekeeper.LOGGER.info("Bot is ready!");
 
         event.getJDA().getGuilds().forEach(guild -> guild.updateCommands().addCommands(

@@ -76,15 +76,15 @@ public class PlayerManager {
     }
 
     private void saveUUIDCache() {
-        File uuidUsernameCache = DiscordGatekeeper.getConfigFile("uuidUsernameCache.json");
-        DiscordGatekeeper.writeToFile(uuidUsernameCache, UUIDNameCache);
+        File uuidUsernameCache = ConfigManager.getFile("uuidUsernameCache.json");
+        ConfigManager.writeToFile(uuidUsernameCache, UUIDNameCache);
     }
 
     @SuppressWarnings("unchecked")
     public void loadUUIDCache() {
-        File uuidUsernameCache = DiscordGatekeeper.getConfigFile("uuidUsernameCache.json");
+        File uuidUsernameCache = ConfigManager.getFile("uuidUsernameCache.json");
         Type type = new TypeToken<Map<UUID, String>>(){}.getType();
-        Map<UUID, String> loadedData = DiscordGatekeeper.readFromFile(uuidUsernameCache, type);
+        Map<UUID, String> loadedData = ConfigManager.readFromFile(uuidUsernameCache, type);
         if (loadedData != null) { UUIDNameCache = loadedData; }
     }
 
@@ -101,14 +101,14 @@ public class PlayerManager {
     }
 
     public void saveLinkedPlayers() {
-        File linkedUsers = DiscordGatekeeper.getConfigFile("linkedUsers.json");
-        DiscordGatekeeper.writeToFile(linkedUsers, linkedPlayers);
+        File linkedUsers = ConfigManager.getFile("linkedUsers.json");
+        ConfigManager.writeToFile(linkedUsers, linkedPlayers);
     }
 
     public void loadLinkedPlayers() {
-        File linkedUsers = DiscordGatekeeper.getConfigFile("linkedUsers.json");
+        File linkedUsers = ConfigManager.getFile("linkedUsers.json");
         Type type = new TypeToken<Set<Player>>(){}.getType();
-        Set<Player> loadedData = DiscordGatekeeper.readFromFile(linkedUsers, type);
+        Set<Player> loadedData = ConfigManager.readFromFile(linkedUsers, type);
         if (loadedData != null) { linkedPlayers = loadedData; }
     }
 
